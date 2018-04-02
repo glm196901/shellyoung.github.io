@@ -303,7 +303,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-02T16:30:07+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-02T16:50:20+08:00">
                 2018-04-02
               </time>
             
@@ -350,8 +350,8 @@
 <h3 id="利用dd命令将镜像写入SD卡"><a href="#利用dd命令将镜像写入SD卡" class="headerlink" title="利用dd命令将镜像写入SD卡"></a>利用dd命令将镜像写入SD卡</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo dd bs=4M <span class="keyword">if</span>=201X-XX-XX-raspbian-stretch.img of=/dev/sdb</span><br></pre></td></tr></table></figure>
 <p>bs可以修改大不要太大</p>
 <h3 id="实在想看写镜像速度情况-打开一个新的terminal"><a href="#实在想看写镜像速度情况-打开一个新的terminal" class="headerlink" title="实在想看写镜像速度情况,打开一个新的terminal"></a>实在想看写镜像速度情况,打开一个新的terminal</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo pkill -USR1 -n -x dd</span><br></pre></td></tr></table></figure>
-<h3 id="将SD卡插入树莓派中-通电插上显示器就ok了"><a href="#将SD卡插入树莓派中-通电插上显示器就ok了" class="headerlink" title="将SD卡插入树莓派中,通电插上显示器就ok了"></a>将SD卡插入树莓派中,通电插上显示器就ok了</h3><p>*使用dd 命令可以覆写任何分区。如果你在指令中指定了错误的设备，你有可能删除你的操作系统。</p>
-<p>*使用 dd 写入，写出的操作可以用于备份SD卡里操作系统和数据文件，随时备份，随时恢复，而且内容完全一样。</p>
+<h3 id="将SD卡插入树莓派中-通电插上显示器就ok了"><a href="#将SD卡插入树莓派中-通电插上显示器就ok了" class="headerlink" title="将SD卡插入树莓派中,通电插上显示器就ok了"></a>将SD卡插入树莓派中,通电插上显示器就ok了</h3><p><em>使用dd 命令可以覆写任何分区。如果你在指令中指定了错误的设备，你有可能删除你的操作系统。
+</em>使用 dd 写入，写出的操作可以用于备份SD卡里操作系统和数据文件，随时备份，随时恢复，而且内容完全一样。</p>
 
           
         
